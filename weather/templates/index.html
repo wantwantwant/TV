@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link href="http://i.tq121.com.cn/c/weather2015/common.css?20171" rel="stylesheet" type="text/css">
+  <link href="http://i.tq121.com.cn/c/weather2015/bluesky/c_7d.css?v=20170407" rel="stylesheet" type="text/css">
+  <script src="{{ url_for('static',filename='js/jquery.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/bootstrap.js') }}" type="application/javascript"></script>
+</head>
+<body>
+<input id="whichDay" type="hidden" value="7d">
+<div class="con today clearfix">
+  <div class="left fl">
+    <div class="ctop clearfix">
+      <div class="crumbs fl">
+        <a href="http://henan.weather.com.cn" target="_blank">河南</a>
+        <span>></span>
+        <a href="http://www.weather.com.cn/weather/101180901.shtml" target="_blank">郑州</a><span>></span> <span>城区</span>
+      </div>
+      <div class="time fr"></div>
+    </div>
+    <ul class="clearfix cnav" id="someDayNav">
+      <li>
+        <a href="/weather1d/101180901.shtml">今天</a>
+      </li>
+      <li class="on">
+        <a href="/weather/101180901.shtml">7天</a>
+      </li>
+      <li>
+        <a href="/weather15d/101180901.shtml">8-15天</a>
+      </li>
+      <li>
+        <a >40天</a>
+      </li>
+      <li>
+        <a href="{{ url_for('static',filename='img/雷达图.png') }}" rel="ico">雷达图</a>
+      </li>
+    </ul>
+    <div id="7d" class="c7d">
+      <input type="hidden" id="hidden_title" value="12月08日08时 周六  多云  0/-6°C"/>
+      <input type="hidden" id="fc_24h_internal_update_time" value="2018120808"/>
+      <input type="hidden" id="update_time" value="07:30"/>
+      <ul class="t clearfix">
+        <li class="sky skyid lv3 on">
+          <h1>8日（今天）</h1>
+          <big class="png40 d01"></big>
+          <big class="png40 n01"></big>
+          <p title="多云" class="wea">多云</p>
+          <p class="tem">
+            <span>0</span>/<i>-6℃</i>
+          </p>
+          <p class="win">
+            <em>
+              <span title="东北风" class="NE"></span>
+              <span title="南风" class="S"></span>
+            </em>
+            <i>3-4级转<3级</i>
+          </p>
+          <div class="slid"></div>
+        </li>
+        <li class="sky skyid lv2">
+          <h1>9日（明天）</h1>
+          <big class="png40 d00"></big>
+          <big class="png40 n01"></big>
+          <p title="晴转多云" class="wea">晴转多云</p>
+          <p class="tem">
+            <span>2</span>/<i>-5℃</i>
+          </p>
+          <p class="win">
+            <em>
+              <span title="南风" class="S"></span>
+              <span title="南风" class="S"></span>
+            </em>
+            <i><3级</i>
+          </p>
+          <div class="slid"></div>
+        </li>
+        <li class="sky skyid lv3">
+          <h1>10日（后天）</h1>
+          <big class="png40 d14"></big>
+          <big class="png40 n14"></big>
+          <p title="小雪" class="wea">小雪</p>
+          <p class="tem">
+            <span>0</span>/<i>-4℃</i>
+          </p>
+          <p class="win">
+            <em>
+              <span title="北风" class="N"></span>
+              <span title="西北风" class="NW"></span>
+            </em>
+            <i><3级转3-4级</i>
+          </p>
+          <div class="slid"></div>
+        </li>
+        <li class="sky skyid lv3">
+          <h1>11日（周二）</h1>
+          <big class="png40 d01"></big>
+          <big class="png40 n00"></big>
+          <p title="多云转晴" class="wea">多云转晴</p>
+          <p class="tem">
+            <span>4</span>/<i>-7℃</i>
+          </p>
+          <p class="win">
+            <em>
+              <span title="西北风" class="NW"></span>
+              <span title="西风" class="W"></span>
+            </em>
+            <i>3-4级转<3级</i>
+          </p>
+          <div class="slid"></div>
+        </li>
+        <li class="sky skyid lv1">
+          <h1>12日（周三）</h1>
+          <big class="png40 d00"></big>
+          <big class="png40 n01"></big>
+          <p title="晴转多云" class="wea">晴转多云</p>
+          <p class="tem">
+            <span>6</span>/<i>-6℃</i>
+          </p>
+          <p class="win">
+            <em>
+              <span title="西南风" class="SW"></span>
+              <span title="西南风" class="SW"></span>
+            </em>
+            <i>3-4级</i>
+          </p>
+          <div class="slid"></div>
+        </li>
+        <li class="sky skyid lv2">
+          <h1>13日（周四）</h1>
+          <big class="png40 d01"></big>
+          <big class="png40 n01"></big>
+          <p title="多云" class="wea">多云</p>
+          <p class="tem">
+            <span>5</span>/<i>-5℃</i>
+          </p>
+          <p class="win">
+            <em>
+              <span title="东风" class="E"></span>
+              <span title="西北风" class="NW"></span>
+            </em>
+            <i><3级</i>
+          </p>
+          <div class="slid"></div>
+        </li>
+        <li class="sky skyid lv2">
+          <h1>14日（周五）</h1>
+          <big class="png40 d01"></big>
+          <big class="png40 n01"></big>
+          <p title="多云" class="wea">多云</p>
+          <p class="tem">
+            <span>5</span>/<i>-4℃</i>
+          </p>
+          <p class="win">
+            <em>
+              <span title="南风" class="S"></span>
+              <span title="西南风" class="SW"></span>
+            </em>
+            <i><3级</i>
+          </p>
+          <div class="slid"></div>
+        </li>
+      </ul>
+      <i class="line1"></i>
+      <input type="hidden" id="fc_3h_internal_update_time" value="2018-12-08 07:30"/>
+      <div class="curve_livezs" id="curve">
+        <div class="time">
+        </div>
+</body>
+</html>
