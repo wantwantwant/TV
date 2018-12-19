@@ -48,7 +48,7 @@ def do_http_post(url, params):
 
 def test_run():
     while True:
-        question = input(f"I say:")
+        question = input(f"小可爱:")
         print(f"马二哈:{smart_chat(question)}")
 
 test_run()
