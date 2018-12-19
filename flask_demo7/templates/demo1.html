@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>bs基本示例</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{{ url_for('static',filename='css/bootstrap.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static',filename='css/main.css') }}">
+    <script src="{{ url_for('static',filename='js/jquery.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/bootstrap.js') }}" type="application/javascript"></script>
+    <link rel="icon" href="{{ url_for('static',filename='img/favicon.ico') }}">
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">菜单</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        <!--商标-->
+            <a class="navbar-brand" href="{{ url_for('index') }}">
+                <img src="{{ url_for('static',filename='img/下载.png') }}">
+            </a>
+        </div>
+        <!--一级菜单，注册登录，下拉列表-->
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#">小奶狗</a></li>
+                <li><a href="#">枫叶色</a></li>
+                <li><a href="#">番茄色</a></li>
+                <li><a href="#">西柚色</a></li>
+            </ul>
+
+            <form class="navbar-form navbar-right">
+                <input type="email" placeholder="请填写邮箱" class="form-control">
+                <input type="password" placeholder="请填写密码" class="form-control">
+                <button type="submit" class="btn btn-success">登录</button>
+            </form>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>口红色号</li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">下拉选色</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">迪奥999</a></li>
+                        <li><a href="#">美宝莲533</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">雅诗兰黛</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!--主体内容-->
+<div class="main_content">
+    <div class="container" style="background-color:white">
+        <h1 class="">口红色号选择介绍</h1>
+        <p>你好撒不会打包是不是都是都会是我的蝴蝶结是你先说说你上课就加强打击武器</p>
+        <p>能接受的还是还是不错你撒出不去回去回去那可能就我能看见请带我去玩的画外音</p>
+        <p>那就是男生不会读取到后期爱不起阿布那不能不去期望气候大会上微博大号的户外契合</p>
+        <button class="btn btn-default btn-lg">查看色号</button>
+    </div>
+    <div class="container">
+         <div class="row">
+             <div class="col-md-4">
+                 <h5>小标题</h5>
+                 <p>
+                     那还是还是不会唱歌手气好的一切客观的核武器放得开会缓存
+                 </p>
+                 <button class="btn btn-default">查看详情</button>
+             </div>
+             <div class="col-md-4">
+                 <h5>小标题</h5>
+                 <p>
+                     那还是还是不会唱歌手气好的一切客观的核武器放得开会缓存
+                 </p>
+                 <button class="btn btn-default">查看详情</button>
+             </div>
+             <div class="col-md-4">
+                 <h5>小标题</h5>
+                 <p>
+                     那还是还是不会唱歌手气好的一切客观的核武器放得开会缓存
+                 </p>
+                 <button class="btn btn-default">查看详情</button>
+             </div>
+             <div class="row">
+                 <div class="col-md-10">
+                     <h5>博文</h5>
+                     <p>你家是哪的还是把钱吧v我QQ鸡年大吉手弩三下五强化大卫杜夫是</p>
+                 </div>
+                 <div class="col-md-2">
+                     <h5>文章目录</h5>
+                     <ul>
+                         <li>五河士道</li>
+                         <li>而大部分</li>
+                         <li>你玩不成</li>
+                     </ul>
+                 </div>
+             </div>
+         </div>
+    </div>
+</div>
+
+<footer>
+    <hr>
+    <p>&copy;2018智游314课堂练习 作者：xxx</p>
+</footer>
+
+</body>
+</html>

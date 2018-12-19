@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--不必要写，增加ie兼容性-->
+{#    不必要写，指定网页宽度和缩放#}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>首页</title>
+{#   方式一： 本地项目引用#}
+    <link href="{{ url_for('static',filename='css/bootstrap.css') }}" rel="stylesheet" type="text/css">
+    <script src="{{ url_for('static',filename='js/bootstrap.js') }}" type="application/javascript"></script>
+
+{#方式二：官方cdn    #}
+{#    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">#}
+{#    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>#}
+
+</head>
+<body>
+     <h1>你好，世界</h1>
+
+</body>
+</html>

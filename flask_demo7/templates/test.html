@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <link href="../static/css/bootstrap.css" rel="stylesheet">
+    <link href="../static/css/mystyle.css" rel="stylesheet">
+    <title>个人简历</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#leadBar" aria-expanded="false" aria-controls="navbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="leadBar">
+                <ul class="navbar nav navbar-nav">
+                    <li><a href="site.html" class="glyphicon glyphicon-home"></a></li>
+                    <li><a href="#info">基本信息</a></li>
+                    <li><a href="">职业技能</a></li>
+                    <li><a href="">项目展示</a></li>
+                    <li><a href="">请联系我</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <div class="page-header">
+        <h1>个人简历</h1>
+    </div>
+    <div class="divContent container">
+        <div class="row">
+            <h2 class="lead">基本信息</h2>
+            <div class="col-sm-3">
+                <blockquote>
+                    <h2>崔耀博</h2>
+                    <footer>Python工程师</footer>
+                </blockquote>
+                <div class="row text-center">
+                    <img src="../static/img/zmz.jpg" alt="boy" width="150px" class="img-responsive img-circle img-thumbnail">
+                </div>
+                <div class="row text-center">
+                    <h3>个人介绍</h3>
+                </div>
+                <div class="row">
+                    <span>I worked as a Junior Software Engineer in XXX ,and I have about 1 year work experience. My major work was python Web development based on spring, sqlite and bootstrap framework. I also did some other things like writing test cases, doing detailed designs and so on.I think I'm a good team player in project teams.</span>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped table-hover table-condensed">
+                        <tr>
+                            <td>姓名</td>
+                            <td>崔耀博</td>
+                            <td>年龄</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>学校</td>
+                            <td>圣德学院</td>
+                            <td>学历</td>
+                            <td>本科</td>
+                        </tr>
+                        <tr>
+                            <td>专业</td>
+                            <td>软件工程</td>
+                            <td>学制</td>
+                            <td>全日制</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <!-- 大屏幕 -->
+                <div class="jumbotron">
+                    <h2>个人荣誉</h2>
+                    <hr>
+                    <p2>I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p2>
+                    <h2>我的空间</h2>
+                    <hr>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <a href="https://me.csdn.net/qq_43304005"><button class="btn-primary">个人博客</button></a>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href=""><button class="btn-primary">个人博客园</button></a>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href=""><button class="btn-primary">我的github</button></a>
+                        </div>
+                    </div>
+                    <h2>个人技能</h2>
+                    <hr>
+                    <p>1.python</p>
+                    <p>2.html</p>
+                    <p>3.mysql</p>
+                    <p>4.django</p>
+                    <p>5.css</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h2 id="skill" class="lead">职业技能</h2>
+
+            <p>
+                <span class="label label-success">Python</span>
+                <span class="label label-success">sqlite</span>
+                <!-- <span class="label label-success">ssh</span> -->
+            </p>
+            <div class="progress">
+                <div class="progress-bar progress-bar-success progress-bar-striped active" style="width: 80%;">
+                    <span>熟悉</span>
+                </div>
+            </div>
+
+            <p>
+                <span class="label label-success">Node.js</span>
+                <span class="label label-success">mysql</span>
+                <!-- <span class="label label-success">ssh</span> -->
+            </p>
+            <div class="progress">
+                <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width: 75%;">
+                    <span>熟悉</span>
+                </div>
+            </div>
+            <p>
+                <span class="label label-info">html/css</span>
+            </p>
+            <div class="progress">
+                <div class="progress-bar progress-bar-info progress-bar-striped active" style="width: 70%;">
+                    <span>熟悉</span>
+                </div>
+            </div>
+
+            <p>
+                <span class="label label-warning">数据结构/算法</span>
+            </p>
+            <div class="progress">
+                <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width: 79%;">
+                    <span>熟悉</span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h2 class="lead">项目展示</h2>
+            <div class="col-sm-7">
+                <div id="" class="myCarousel carousel slide">
+                    <ol class="carousel-indicators">
+                        <li data-target=".myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target=".myCarousel" data-slide-to="1"></li>
+                        <li data-target=".myCarousel" data-slide-to="2"></li>
+                        <li data-target=".myCarousel" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="../static/img/img1.jpg" style="height: 406px;width: 650px" alt="第一张" class="img-responsive">
+                            <div class="carousel-caption">项目 1</div>
+                        </div>
+                        <div class="item">
+                            <img src="../static/img/img2.jpg" style="height: 406px;width: 650px" alt="第二张" class="img-responsive">
+                            <div class="carousel-caption">项目 2</div>
+                        </div>
+                        <div class="item">
+                            <img src="../static/img/img3.jpg" style="height: 406px;width: 650px" alt="第三张" class="img-responsive">
+                            <div class="carousel-caption">项目 3</div>
+                        </div>
+                        <div class="item">
+                            <img src="../static/img/img4.jpg" style="height: 406px;width: 650px" alt="第四张" class="img-responsive">
+                            <div class="carousel-caption">项目 4</div>
+                        </div>
+                        <!--左右翻页-->
+                        <a href=".myCarousel" data-slide="prev" class="carousel-control left">
+                            <span class="glyphicon glyphicon-chevron-left"/>
+                        </a>
+                        <a href=".myCarousel" data-slide="next" class="carousel-control right">
+                            <span class="glyphicon glyphicon-chevron-right"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <div id="" class="myCarousel carousel slide">
+                    <ol class="carousel-indicators">
+                        <li data-target=".myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target=".myCarousel" data-slide-to="1"></li>
+                        <li data-target=".myCarousel" data-slide-to="2"></li>
+                        <li data-target=".myCarousel" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+                            <div class="carousel-caption">项目 1</div>
+                        </div>
+                        <div class="item">
+                            <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+                            <div class="carousel-caption">项目 2</div>
+                        </div>
+                        <div class="item">
+                            <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+                            <div class="carousel-caption">项目 3</div>
+                        </div>
+                        <div class="item">
+                            <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+                            <div class="carousel-caption">项目 4</div>
+                        </div>
+                        <!--左右翻页-->
+                        <a href=".myCarousel" data-slide="prev" class="carousel-control left">
+                    <span class="glyphicon glyphicon-chevron-left"/>
+                </a>
+                        <a href=".myCarousel" data-slide="next" class="carousel-control right">
+                    <span class="glyphicon glyphicon-chevron-right"/>
+                </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section  id="contact" name="contact">
+        <div class="row">
+            <div class="col-lg-2">
+            <h5>联系</h5>
+          </div>
+          <div class="col-lg-4">
+            <p>
+              <t>邮箱</t><br/> 778042395@qq.com <br/>
+            </p>
+            <p>
+              <t>住址</t><br/> 河南省郑州市管城回族区 <br/>
+            </p>
+            <p>
+              <t>电话</t><br/> 15093315773 <br/>
+            </p>
+            <p>
+              <t>社会联系</t><br/>
+              <a href="#"><i class="fa fa-dribbble"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+              <a href="#"><i class="fa fa-apple"></i></a>
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <p>
+              <sm>联系表单</sm>
+            </p>
+            <form class="contact-form php-mail-form" role="form" action="contactform/contactform.php" method="POST">
+
+              <div class="form-group">
+                <label for="contact-name">您的姓名</label>
+                <input type="name" name="name" class="form-control" id="contact-name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <label for="contact-email">您的邮箱</label>
+                <input type="email" name="email" class="form-control" id="contact-email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <label for="contact-subject">主题</label>
+                <input type="text" name="subject" class="form-control" id="contact-subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
+                <div class="validate"></div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">您的消息</label>
+                <textarea class="form-control" name="message" id="contact-message" placeholder="Your Message" rows="5" data-rule="required" data-msg="Please write something for us"></textarea>
+                <div class="validate"></div>
+              </div>
+
+              <div class="loading"></div>
+
+              <div class="form-send">
+                <button type="submit" class="btn btn-large">发送信息</button>
+              </div>
+
+            </form>
+
+          </div>
+        </div>
+        <!--/.row -->
+        </section>
+     </div>
+
+
+
+</body>
+
+</html>
